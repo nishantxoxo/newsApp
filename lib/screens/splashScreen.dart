@@ -22,7 +22,7 @@ class _SplashscreenState extends State<Splashscreen> {
 
 
     Timer(Duration(seconds: 2), () {
-      Navigator.push(context, MaterialPageRoute(builder: (context) => Homescreen(),));
+      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => Homescreen(),));
     },);
   }
 
@@ -40,7 +40,7 @@ class _SplashscreenState extends State<Splashscreen> {
               "images/splash_pic.jpg",
               fit: BoxFit.cover,
               width: width * 0.9,
-              height: 0.5,
+              height: height * 0.5,
             ),
             SizedBox(height: height * 0.04,),
             Text("TOP HEADLINES", style: GoogleFonts.anton(letterSpacing: .6, color: Colors.grey),),
